@@ -1,0 +1,46 @@
+<html>
+ <head>
+   <title>62nd program</title>
+   <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+     font-size:20px;
+     color:#85C1E9;
+    }
+    h2 {
+     font-size:30px;
+     color:#D35400;
+     text-decoration:underline #8E44AD;
+   }
+    button {
+     padding:7px 10px;
+     background-color:#58D68D;
+   }
+  </style>
+ </head>
+ <body>
+   <h2>checking for prefix</h2>
+   <p> Enter a string <input type="text" id="num"></p>
+   <p> Enter the substring<input type="text" id="num1"></p>
+   <button type="button" onClick="count()"> check</button>
+   <p>Result <input id="output1"></p>
+   <script>
+      function count() {
+          var str,str1;
+          str = document.getElementById("num").value;
+          str1 = document.getElementById("num1").value;
+          if ( str.startsWith(str1) ) {
+           document.getElementById("output1").value= "It is a prefix";
+          }
+          else {
+           document.getElementById("output1").value= "It is not a prefix";
+          }
+      }     
+    </script>
+  </body>
+ </html>
+      

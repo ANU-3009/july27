@@ -1,0 +1,43 @@
+<html>
+ <head>
+   <title>52nd program</title>
+   <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+     font-size:20px;
+     color:#85C1E9;
+    }
+    h2 {
+     font-size:30px;
+     color:#D35400;
+     text-decoration:underline #8E44AD;
+   }
+    button {
+     padding:7px 10px;
+     background-color:#58D68D;
+   }
+  </style>
+ </head>
+ <body>
+   <h2> string to ascii</h2>
+   <p>Enter the string :<input type="text" id="num1"></p>
+   <button type="button" onClick="check()"> convert </button>
+   <p>Result <input id="output1"></p>
+   <script>
+      function check() {
+        var str1,len,i,zzz;
+        str1 = document.getElementById("num1").value;
+        len = str1.length - 1;
+        for ( i=0;i<=len;i++ ) {
+            zzz = str1.charCodeAt(i)
+            document.getElementById("output1").value = zzz;
+        }
+      }     
+    </script>
+  </body>
+ </html>
+      

@@ -1,0 +1,48 @@
+<html>
+ <head>
+   <title>63rd program</title>
+   <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+     font-size:20px;
+     color:#85C1E9;
+    }
+    h2 {
+     font-size:30px;
+     color:#D35400;
+     text-decoration:underline #8E44AD;
+   }
+    button {
+     padding:7px 10px;
+     background-color:#58D68D;
+   }
+  </style>
+ </head>
+ <body>
+   <h2> Replacing the string</h2>
+   <p> Enter a string <input type="text" id="num"></p>
+   <p> Enter part to change <input type="text" id="num1"></p>
+   <p> Enter what to add <input type="text" id="num2"></p>
+   <button type="button" onClick="convert()"> convert</button>
+   <p>Result <input id="output1"></p>
+   <script>
+      function convert() {
+          var str,str1,str2,result;
+          str = document.getElementById("num").value;
+          str1 = document.getElementById("num1").value;
+          str2 = document.getElementById("num2").value;
+          if ( str.includes(str1)) {
+             document.getElementById("output1").value= str.replaceAll(str1,str2);
+          }
+          else {
+              document.getElementById("output1").value= "string not found";
+          }
+      }     
+    </script>
+  </body>
+ </html>
+      

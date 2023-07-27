@@ -1,0 +1,44 @@
+<html>
+ <head>
+   <title>47th program</title>
+   <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+     font-size:20px;
+     color:#85C1E9;
+    }
+    h2 {
+     font-size:30px;
+     color:#D35400;
+     text-decoration:underline #8E44AD;
+   }
+    button {
+     padding:7px 10px;
+     background-color:#58D68D;
+   }
+  </style>
+ </head>
+ <body>
+   <h2> digit count </h2>
+   <p>Enter the Number :<input id="num1"></p>
+   <button type="button" onClick="check()"> Check </button>
+   <p>Result =<input id="output1"></p>
+   <script>
+      function check() {
+        var rem,a,count=0;
+        a = parseInt(document.getElementById("num1").value);
+        while( a > 0) {
+           rem = a % 10;
+           count ++;
+           a = Math.floor(a / 10);
+        }
+        document.getElementById("output1").value = + count;
+      }
+    </script>
+  </body>
+ </html>
+      

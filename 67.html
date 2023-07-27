@@ -1,0 +1,51 @@
+<html>
+ <head>
+   <title>67th program</title>
+   <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+     font-size:20px;
+     color:#85C1E9;
+    }
+    h2 {
+     font-size:30px;
+     color:#D35400;
+     text-decoration:underline #8E44AD;
+   }
+    button {
+     padding:7px 10px;
+     background-color:#58D68D;
+   }
+  </style>
+ </head>
+ <body>
+   <h2>counting  vowels and consonant in string</h2>
+   <p> Enter a string <input type="text" id="num"></p>
+   <button type="button" onClick="convert()"> convert</button>
+   <p>vowel <input id="output1"></p>
+   <p>consonant <input id="output2"></p>
+   <script>
+      function convert() {
+          var str,len,vowel=0,consonant=0,ch;
+          str = document.getElementById("num").value;
+          len = str.length;
+          for ( i=0;i<len;i++) {
+            ch=str.charAt(i)
+            if ( ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') {
+               vowel=vowel+1
+            }
+            else {
+               consonant = consonant +1;
+            }
+          }
+          document.getElementById("output1").value = vowel;
+          document.getElementById("output2").value = consonant;
+       }
+    </script>
+  </body>
+ </html>
+      

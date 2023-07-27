@@ -1,0 +1,38 @@
+<html>
+ <head>
+   <title>54th program</title>
+   <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+     font-size:20px;
+     color:#85C1E9;
+    }
+    h2 {
+     font-size:30px;
+     color:#D35400;
+     text-decoration:underline #8E44AD;
+   }
+    button {
+     padding:7px 10px;
+     background-color:#58D68D;
+   }
+  </style>
+ </head>
+ <body>
+   <h2> byte to string</h2>
+   <button type="button" onClick="check()"> Convert </button>
+   <p>Result <input id="output1"></p>
+   <script>
+      function check() {
+        var byte = [72,101,108,111,32,87,111,114,108,100];
+        let text = String.fromCharCode(...byte);
+        document.getElementById("output1").value = text;
+      }     
+    </script>
+  </body>
+ </html>
+      

@@ -1,0 +1,46 @@
+<html>
+ <head>
+   <title>48th program</title>
+   <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+     font-size:20px;
+     color:#85C1E9;
+    }
+    h2 {
+     font-size:30px;
+     color:#D35400;
+     text-decoration:underline #8E44AD;
+   }
+    button {
+     padding:7px 10px;
+     background-color:#58D68D;
+   }
+  </style>
+ </head>
+ <body>
+   <h2> fibinocci series </h2>
+   <p>Enter the range :<input id="num1"></p>
+   <button type="button" onClick="check()"> Check </button>
+   <p id="output1"></p>
+   <script>
+      function check() {
+        var a, n1=0,n2=1,nxt,fib=[],Result,i;
+        a = parseInt(document.getElementById("num1").value);
+        for (i=1;i<=a;i++)  {
+           nxt = n1 + n2;
+           n1 = n2;
+           n2 = nxt;
+           Result = n1;
+           fib.push(Result);
+        }
+        document.getElementById("output1").innerHTML = fib;
+      }
+    </script>
+  </body>
+ </html>
+      
